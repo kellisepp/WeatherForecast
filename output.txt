@@ -1,0 +1,5 @@
+{
+  "temperature" : -2.05,
+  "latitude" : 59.38,
+  "longitude" : 28.19
+}
