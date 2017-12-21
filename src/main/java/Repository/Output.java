@@ -23,7 +23,6 @@ public class Output {
 		ObjectMapper mapper = new ObjectMapper();
 		ObjectWriter writer = mapper.writer(new DefaultPrettyPrinter());
 		FileOutputStream file = new FileOutputStream("/Users/kellisepp/git/WeatherForecast/"+ city +".json", true);
-		System.out.println("heloo");
 		writer.writeValue(file, response);
 	}
 		

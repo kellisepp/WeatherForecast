@@ -1,0 +1,157 @@
+{
+  "name" : "Tallinn",
+  "temperature" : 3.0,
+  "latitude" : 59.44,
+  "longitude" : 24.75
+}{
+  "cityName" : "Tallinn",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -0.23,
+      "maxTemperature" : 2.08
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -0.71,
+      "maxTemperature" : 4.47
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 1.18,
+      "maxTemperature" : 4.28
+    }
+  },
+  "latitude" : 59.4372,
+  "longitude" : 24.7454
+}{
+  "name" : "Tallinn",
+  "temperature" : 3.0,
+  "latitude" : 59.44,
+  "longitude" : 24.75
+}{
+  "cityName" : "Tallinn",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -0.23,
+      "maxTemperature" : 2.08
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -0.71,
+      "maxTemperature" : 4.47
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 1.18,
+      "maxTemperature" : 4.28
+    }
+  },
+  "latitude" : 59.4372,
+  "longitude" : 24.7454
+}{
+  "name" : "Tallinn",
+  "temperature" : 3.0,
+  "latitude" : 59.44,
+  "longitude" : 24.75
+}{
+  "cityName" : "Tallinn",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -0.23,
+      "maxTemperature" : 2.08
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -0.71,
+      "maxTemperature" : 4.47
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 1.18,
+      "maxTemperature" : 4.28
+    }
+  },
+  "latitude" : 59.4372,
+  "longitude" : 24.7454
+}{
+  "name" : "Tallinn",
+  "temperature" : 3.0,
+  "latitude" : 59.44,
+  "longitude" : 24.75
+}{
+  "cityName" : "Tallinn",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -0.23,
+      "maxTemperature" : 2.08
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -0.71,
+      "maxTemperature" : 4.47
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 1.18,
+      "maxTemperature" : 4.28
+    }
+  },
+  "latitude" : 59.4372,
+  "longitude" : 24.7454
+}{
+  "name" : "Tallinn",
+  "temperature" : 4.0,
+  "latitude" : 59.44,
+  "longitude" : 24.75
+}{
+  "cityName" : "Tallinn",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -0.23,
+      "maxTemperature" : 2.08
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -0.71,
+      "maxTemperature" : 4.47
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 1.18,
+      "maxTemperature" : 4.28
+    }
+  },
+  "latitude" : 59.4372,
+  "longitude" : 24.7454
+}{
+  "name" : "Tallinn",
+  "temperature" : 4.0,
+  "latitude" : 59.44,
+  "longitude" : 24.75
+}{
+  "cityName" : "Tallinn",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -0.23,
+      "maxTemperature" : 2.08
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -0.71,
+      "maxTemperature" : 4.47
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 1.18,
+      "maxTemperature" : 4.28
+    }
+  },
+  "latitude" : 59.4372,
+  "longitude" : 24.7454
+}

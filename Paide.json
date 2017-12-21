@@ -1,0 +1,27 @@
+{
+  "name" : "Paide",
+  "temperature" : 2.33,
+  "latitude" : 58.89,
+  "longitude" : 25.57
+}{
+  "cityName" : "Paide",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -7.32,
+      "maxTemperature" : 0.63
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -3.83,
+      "maxTemperature" : 2.8
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : -1.81,
+      "maxTemperature" : 2.37
+    }
+  },
+  "latitude" : 58.8869,
+  "longitude" : 25.5699
+}

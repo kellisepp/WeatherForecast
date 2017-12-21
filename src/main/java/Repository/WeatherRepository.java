@@ -19,7 +19,7 @@ import okhttp3.HttpUrl;
 
 public class WeatherRepository {
 
-	public CurrentWeatherResponse getCurrentWeather(Request request) throws IOException, JSONException {
+	public CurrentWeatherResponse getCurrentWeather(Request request, ConnectionToApi connection) throws IOException, JSONException {
 		 URL requestURL = new HttpUrl.Builder()
 				.scheme("https")
 				.host("api.openweathermap.org")
@@ -29,7 +29,7 @@ public class WeatherRepository {
 				.addQueryParameter("units", request.unit)
 				.build().url();
 		String requestUrl = requestURL.toString();
-		JSONObject json = ConnectionToApi.connectHttpURL(requestUrl);
+		JSONObject json = connection.connectHttpURL(requestUrl);
 		String name = json.getString("name");
 		double temperature = json.getJSONObject("main").getDouble("temp");
 		double latitude = json.getJSONObject("coord").getDouble("lat");
@@ -40,7 +40,7 @@ public class WeatherRepository {
 		return response;
 	}
 	
-	public WeatherForecastResponse getWeatherForecast(Request request) throws IOException, JSONException {
+	public WeatherForecastResponse getWeatherForecast(Request request, ConnectionToApi connection) throws IOException, JSONException {
 		 URL requestURL = new HttpUrl.Builder()
 				.scheme("https")
 				.host("api.openweathermap.org")
@@ -50,7 +50,7 @@ public class WeatherRepository {
 				.addQueryParameter("units", request.unit)
 				.build().url();
 		String requestUrl = requestURL.toString();
-		JSONObject json = ConnectionToApi.connectHttpURL(requestUrl);
+		JSONObject json = connection.connectHttpURL(requestUrl);
 		double latitude = json.getJSONObject("city").getJSONObject("coord").getDouble("lat");
 		double longitude = json.getJSONObject("city").getJSONObject("coord").getDouble("lon");
 		String cityName = json.getJSONObject("city").getString("name");

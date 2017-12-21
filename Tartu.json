@@ -1,0 +1,22 @@
+{
+  "name" : null,
+  "temperature" : 0.0,
+  "latitude" : 0.0,
+  "longitude" : 0.0,
+  "callbacks" : [ {
+    "handler" : {
+      "invocationContainer" : {
+        "invocationForStubbing" : null,
+        "invocations" : [ ],
+        "stubbedInvocations" : [ ]
+      },
+      "mockSettings" : {
+        "typeToMock" : "Model.CurrentWeatherResponse",
+        "extraInterfaces" : [ ],
+        "name" : null,
+        "spiedInstance" : null,
+        "defaultAnswer"
+      }
+    }
+  } ]
+}

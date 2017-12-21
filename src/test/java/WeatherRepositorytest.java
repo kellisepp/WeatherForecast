@@ -10,13 +10,16 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 import org.junit.*;
+import org.mockito.Mockito;
 
 import Model.CurrentWeatherResponse;
 import Model.Days;
 import Model.Request;
 import Model.WeatherForecastResponse;
 import Model.WeatherForecast;
+import Repository.ConnectionToApi;
 import Repository.Output;
 import Repository.Weather;
 import Repository.WeatherForecastProcessing;
@@ -31,15 +34,16 @@ public class WeatherRepositorytest {
     @BeforeClass
     	
     public static void setUpAllTests() throws IOException, JSONException, ParseException {
-    	WeatherRepository weatherRepo = new WeatherRepository();
-    	request = new Request("Tallinn", "metric", "33d24dbe4f8dc4fabc901492abb1e123");
-	    	try{
-		    	weatherResponse = weatherRepo.getCurrentWeather(request);
-		    forecastResponse = weatherRepo.getWeatherForecast(request);
-
-	    } catch(Exception e){
-	        fail("All test will be ignored, cause: " + e.getMessage());
-	    }
+    		ConnectionToApi connection = new ConnectionToApi();
+	    	WeatherRepository weatherRepo = new WeatherRepository();
+	    	request = new Request("Tallinn", "metric", "33d24dbe4f8dc4fabc901492abb1e123");
+		    	try{
+			    	weatherResponse = weatherRepo.getCurrentWeather(request, connection);
+			    forecastResponse = weatherRepo.getWeatherForecast(request, connection);
+	
+		    } catch(Exception e){
+		        fail("All test will be ignored, cause: " + e.getMessage());
+		    }
    }
     
     @Test
@@ -51,22 +55,7 @@ public class WeatherRepositorytest {
             fail("Test failed, cause: " + e.getMessage());
         }
     }
-    
-    
-    @Test
-    public void testIfCallingRequestReturnResponse() throws IOException, JSONException {
-	    	WeatherRepository WeatherRepoMock = mock(WeatherRepository.class);
-	    	Request request = mock(Request.class);
-	    	WeatherForecast forecastDummy = new WeatherForecast("20-20-20",0.2,12.2);
-	    	Days days = new Days (forecastDummy, forecastDummy, forecastDummy);
-	    	CurrentWeatherResponse response = new CurrentWeatherResponse("Narva", 24, 10, 120);
-	    WeatherForecastResponse forecastResponse = new WeatherForecastResponse("Narva", days, 0, 0);
-	    	when(WeatherRepoMock.getCurrentWeather(request)).thenReturn(response);
-	    when(WeatherRepoMock.getWeatherForecast(request)).thenReturn(forecastResponse);
-	    
-	    assertEquals(WeatherRepoMock.getWeatherForecast(request), forecastResponse);
-	    assertEquals(WeatherRepoMock.getCurrentWeather(request), response);
-    }
+   
  
     @Test
     public void testIfWeatherForecastDatesAreValid(){
@@ -162,6 +151,22 @@ public class WeatherRepositorytest {
         }
     }
     
-   
+    @Test
+    public void testIfConnectionToApiIsCalled() throws IOException, JSONException {
+	    	WeatherRepository weatherRepo = new WeatherRepository();
+	    	// Request request = mock(Request.class);
+	    	request = new Request("Tallinn", "metric", "33d24dbe4f8dc4fabc901492abb1e123");
+	    	String jsonString = "{\"city\":{\"country\":\"EE\"}}";
+	    	String url = "www.yeye.com";
+	    JSONObject jsonDummy = new JSONObject(jsonString);
+	    	
+	    	// CurrentWeatherResponse response = mock(CurrentWeatherResponse.class);
+	    	ConnectionToApi connection = mock(ConnectionToApi.class);
+	    //	System.out.println(jsonDummy);
+	    	Mockito.when(connection.connectHttpURL(anyString())).thenReturn(jsonDummy);
+	    weatherRepo.getCurrentWeather(request, connection);
+	    verify(connection, times(1)).connectHttpURL(anyString());
+    }
+       
 
 }

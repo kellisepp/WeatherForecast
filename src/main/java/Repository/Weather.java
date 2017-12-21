@@ -23,13 +23,14 @@ public class Weather {
 		Output output = new Output();
 		WeatherRepository weather = new WeatherRepository();
 		
-		//ArrayList<String> listOfCities = location.getCityFromConsole();
-		ArrayList<String> listOfCities = location.getCityFromFile();
+		ArrayList<String> listOfCities = location.getCityFromConsole();
+		//ArrayList<String> listOfCities = location.getCityFromFile();
  
 		for(String city: listOfCities) {
     		Request request = new Request(city, "metric", API_KEY);
-	        CurrentWeatherResponse weatherResponse = weather.getCurrentWeather(request);
-	        WeatherForecastResponse forecastResponse = weather.getWeatherForecast(request);
+    			ConnectionToApi connection = new ConnectionToApi();
+	        CurrentWeatherResponse weatherResponse = weather.getCurrentWeather(request, connection);
+	        WeatherForecastResponse forecastResponse = weather.getWeatherForecast(request, connection);
 	        output.writeWeatherOutputToFile(city, weatherResponse);
 	        output.writeForecastOutputToFile(city, forecastResponse);
 		}

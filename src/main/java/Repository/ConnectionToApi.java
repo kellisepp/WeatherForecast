@@ -22,12 +22,13 @@ public class ConnectionToApi {
     return stringBuilder.toString();
   }
 
-  public static JSONObject connectHttpURL(String requestUrl) throws IOException, JSONException {
+  public JSONObject connectHttpURL(String requestUrl) throws IOException, JSONException {
     InputStream inputStream = new URL(requestUrl).openStream();
     try {
       BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, Charset.forName("UTF-8")));
       String jsonText = readAll(reader);
       JSONObject json = new JSONObject(jsonText);
+      System.out.println(json);
       return json;
     } finally {
     	inputStream.close();

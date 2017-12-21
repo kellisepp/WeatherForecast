@@ -1,0 +1,157 @@
+{
+  "name" : "Paris",
+  "temperature" : 8.37,
+  "latitude" : 48.86,
+  "longitude" : 2.35
+}{
+  "cityName" : "Paris",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 8.04,
+      "maxTemperature" : 9.97
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.14,
+      "maxTemperature" : 9.2
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 6.61,
+      "maxTemperature" : 7.55
+    }
+  },
+  "latitude" : 48.8566,
+  "longitude" : 2.3515
+}{
+  "name" : "Paris",
+  "temperature" : 8.5,
+  "latitude" : 48.86,
+  "longitude" : 2.35
+}{
+  "cityName" : "Paris",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 8.04,
+      "maxTemperature" : 9.97
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.14,
+      "maxTemperature" : 9.2
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 6.61,
+      "maxTemperature" : 7.55
+    }
+  },
+  "latitude" : 48.8566,
+  "longitude" : 2.3515
+}{
+  "name" : "Paris",
+  "temperature" : 8.5,
+  "latitude" : 48.86,
+  "longitude" : 2.35
+}{
+  "cityName" : "Paris",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 8.04,
+      "maxTemperature" : 9.97
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.14,
+      "maxTemperature" : 9.2
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 6.61,
+      "maxTemperature" : 7.55
+    }
+  },
+  "latitude" : 48.8566,
+  "longitude" : 2.3515
+}{
+  "name" : "Paris",
+  "temperature" : 8.5,
+  "latitude" : 48.86,
+  "longitude" : 2.35
+}{
+  "cityName" : "Paris",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 8.04,
+      "maxTemperature" : 9.97
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.14,
+      "maxTemperature" : 9.2
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 6.61,
+      "maxTemperature" : 7.55
+    }
+  },
+  "latitude" : 48.8566,
+  "longitude" : 2.3515
+}{
+  "name" : "Paris",
+  "temperature" : 8.5,
+  "latitude" : 48.86,
+  "longitude" : 2.35
+}{
+  "cityName" : "Paris",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 8.04,
+      "maxTemperature" : 9.97
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.14,
+      "maxTemperature" : 9.2
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 6.61,
+      "maxTemperature" : 7.55
+    }
+  },
+  "latitude" : 48.8566,
+  "longitude" : 2.3515
+}{
+  "name" : "Paris",
+  "temperature" : 8.5,
+  "latitude" : 48.86,
+  "longitude" : 2.35
+}{
+  "cityName" : "Paris",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 8.04,
+      "maxTemperature" : 9.97
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.14,
+      "maxTemperature" : 9.2
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 6.61,
+      "maxTemperature" : 7.55
+    }
+  },
+  "latitude" : 48.8566,
+  "longitude" : 2.3515
+}

@@ -1,0 +1,157 @@
+{
+  "name" : "London",
+  "temperature" : 9.7,
+  "latitude" : 51.51,
+  "longitude" : -0.13
+}{
+  "cityName" : "London",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 7.79,
+      "maxTemperature" : 10.52
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.77,
+      "maxTemperature" : 10.46
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 10.5,
+      "maxTemperature" : 11.42
+    }
+  },
+  "latitude" : 51.5073,
+  "longitude" : -0.1277
+}{
+  "name" : "London",
+  "temperature" : 10.0,
+  "latitude" : 51.51,
+  "longitude" : -0.13
+}{
+  "cityName" : "London",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 7.79,
+      "maxTemperature" : 10.52
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.77,
+      "maxTemperature" : 10.46
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 10.5,
+      "maxTemperature" : 11.42
+    }
+  },
+  "latitude" : 51.5073,
+  "longitude" : -0.1277
+}{
+  "name" : "London",
+  "temperature" : 10.0,
+  "latitude" : 51.51,
+  "longitude" : -0.13
+}{
+  "cityName" : "London",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 7.79,
+      "maxTemperature" : 10.52
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.77,
+      "maxTemperature" : 10.46
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 10.5,
+      "maxTemperature" : 11.42
+    }
+  },
+  "latitude" : 51.5073,
+  "longitude" : -0.1277
+}{
+  "name" : "London",
+  "temperature" : 10.0,
+  "latitude" : 51.51,
+  "longitude" : -0.13
+}{
+  "cityName" : "London",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 7.79,
+      "maxTemperature" : 10.52
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.77,
+      "maxTemperature" : 10.46
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 10.5,
+      "maxTemperature" : 11.42
+    }
+  },
+  "latitude" : 51.5073,
+  "longitude" : -0.1277
+}{
+  "name" : "London",
+  "temperature" : 10.0,
+  "latitude" : 51.51,
+  "longitude" : -0.13
+}{
+  "cityName" : "London",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 7.79,
+      "maxTemperature" : 10.52
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.77,
+      "maxTemperature" : 10.46
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 10.5,
+      "maxTemperature" : 11.42
+    }
+  },
+  "latitude" : 51.5073,
+  "longitude" : -0.1277
+}{
+  "name" : "London",
+  "temperature" : 10.0,
+  "latitude" : 51.51,
+  "longitude" : -0.13
+}{
+  "cityName" : "London",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : 7.79,
+      "maxTemperature" : 10.52
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : 7.77,
+      "maxTemperature" : 10.46
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 10.5,
+      "maxTemperature" : 11.42
+    }
+  },
+  "latitude" : 51.5073,
+  "longitude" : -0.1277
+}

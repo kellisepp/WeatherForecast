@@ -1,0 +1,27 @@
+{
+  "name" : "Viljandi",
+  "temperature" : 1.01,
+  "latitude" : 58.37,
+  "longitude" : 25.59
+}{
+  "cityName" : "Viljandi",
+  "forecastDays" : {
+    "dayOne" : {
+      "date" : "2017-12-22",
+      "minTemperature" : -9.0,
+      "maxTemperature" : 0.78
+    },
+    "dayTwo" : {
+      "date" : "2017-12-23",
+      "minTemperature" : -2.83,
+      "maxTemperature" : 1.88
+    },
+    "dayThree" : {
+      "date" : "2017-12-24",
+      "minTemperature" : 0.1,
+      "maxTemperature" : 1.87
+    }
+  },
+  "latitude" : 58.366,
+  "longitude" : 25.5877
+}
