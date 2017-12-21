@@ -30,11 +30,12 @@ public class WeatherRepository {
 				.build().url();
 		String requestUrl = requestURL.toString();
 		JSONObject json = ConnectionToApi.connectHttpURL(requestUrl);
+		String name = json.getString("name");
 		double temperature = json.getJSONObject("main").getDouble("temp");
 		double latitude = json.getJSONObject("coord").getDouble("lat");
 		double longitude = json.getJSONObject("coord").getDouble("lon");
 
-		CurrentWeatherResponse response = new CurrentWeatherResponse(temperature, latitude, longitude);
+		CurrentWeatherResponse response = new CurrentWeatherResponse(name, temperature, latitude, longitude);
 		System.out.println(temperature + response.toString());
 		return response;
 	}

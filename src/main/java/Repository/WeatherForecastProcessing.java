@@ -20,6 +20,7 @@ public class WeatherForecastProcessing {
     String formattedDayThree;
  
 	public void seperateDaysAndTemperatures(JSONArray listOfForecasts) throws JSONException {
+		
 	    SimpleDateFormat YearMonthDayFormat = new SimpleDateFormat("yyyy-MM-dd");
 	   
 		Calendar calDayOne = Calendar.getInstance();
@@ -52,12 +53,9 @@ public class WeatherForecastProcessing {
 				this.dayThreeTemperatures.add(temperature);
 			}
 		}
-		System.out.println("teised" + this.dayTwoTemperatures);
-		
 	}
 	
 	public double getMinTemperature(ArrayList<Double> temperatures) {
-		System.out.println("yay" + temperatures);
 		return Collections.min(temperatures);
 	}
 

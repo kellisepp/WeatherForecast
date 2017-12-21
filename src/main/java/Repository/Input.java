@@ -1,30 +1,41 @@
 package Repository;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Input {
-	String[] cityName;
+import org.json.JSONException;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.json.simple.JSONArray; 
+import org.json.simple.JSONObject;
 
-	public void getUserInput() {
-		
-			Scanner scanner = new Scanner(System.in);
-		    System.out.println("Please insert city name: ");
-		    String userInput = scanner.nextLine();
-		    this.cityName = userInput.split(",");
-	}
+
+public class Input {
 	
-	public void saveUserInputToFile() throws FileNotFoundException, UnsupportedEncodingException {
-		System.out.println("yoyoyoy" + cityName);
-		PrintWriter writer = new PrintWriter("input.txt", "UTF-8");
-		
-		for (int i = 0; i < cityName.length; i++) {
-			writer.println(cityName[i].trim());
-		}
-		writer.close();
-	}
+	public ArrayList<String> getCityFromConsole() {
+		ArrayList<String> listOfCities = new ArrayList<String>();
+		System.out.println("Enter a city: ");
+    	Scanner reader = new Scanner(System.in);
+		String city = reader.nextLine();
+		listOfCities.add(city);
+		reader.close();
+		return listOfCities;
+    }
 	
+	public ArrayList<String> getCityFromFile() throws IOException, ParseException, JSONException {
+		ArrayList<String> listOfCities = new ArrayList<String>();
+		JSONParser parser = new JSONParser();
+        
+        JSONObject object = (JSONObject) parser.parse(new FileReader("/Users/kellisepp/git/WeatherForecast/input.json"));
+        JSONArray request = (JSONArray) object.get("request");
+        for (Object o : request) {
+        	JSONObject city = (JSONObject) o;
+        	String cityName = (String) city.get("city");
+        	listOfCities.add(cityName);
+        }
+  
+        return listOfCities;
+	}
 }

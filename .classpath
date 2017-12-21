@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="/Users/kellisepp/Desktop/okio-1.13.0.jar"/>
 	<classpathentry kind="lib" path="/Users/kellisepp/Desktop/json-simple-1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/kellisepp/Desktop/jackson-all-1.9.9.jar"/>
+	<classpathentry kind="lib" path="/Users/kellisepp/Downloads/mockito-all-1.9.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
